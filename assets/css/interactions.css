@@ -1,0 +1,15 @@
+.navigation-links:hover {
+  color: var(--secondary-font-color);
+}
+
+.navigation-contact-button:hover,
+.first-page-check-work-button:hover {
+  color: var(--secondary-font-color);
+  background-color: var(--secondary-font-lightest);
+}
+
+.about-page-image:hover {
+  background: url("../images/about-me.jpg");
+  background-size: cover;
+  background-position: top;
+}

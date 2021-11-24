@@ -1,0 +1,316 @@
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+:root {
+  --hot-pink: #ffaebc;
+
+  --navy: #0a192f;
+  --tiffany-blue: #a0e7e5;
+  --tiffany-blue-light: #a0e7e5a6;
+  --baby-blue: #7ec8e3;
+  --mint: #b4f8c8;
+  --yellow: #fbe7c6;
+
+  /* Font Colors */
+  --primary-font-color: #ccd6f6;
+  --primary-font-lightest: #8892b0;
+  --secondary-font-color: #60f7d4cb;
+  --secondary-font-lightest: #60f7d44d;
+  --backup-font-color: rgba(245, 222, 179, 0.75);
+}
+
+@font-face {
+  font-family: "SF";
+  src: url("../fonts/SF-Mono/SFMonoRegular.otf");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/Lora/Lora-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito/Nunito-Regular.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswald/Oswald-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/Outfit/Outfit-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Playfair";
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Quick-Sand";
+  src: url("../fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/Raleway-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto-Mono";
+  src: url("../fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+.landing-page-container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--navy);
+  color: var(--primary-font-color);
+}
+
+.navigation-container {
+  width: 100%;
+  height: 15vh;
+  padding: 0 3% 0 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--primary-font-color);
+}
+
+.logo-section {
+  font-family: "Quick-Sand";
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 1px;
+  color: var(--secondary-font-color);
+}
+
+.navigation-links-container {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.navigation-links {
+  width: fit-content;
+  display: flex;
+  font-size: "Montserrat";
+  font-size: 0.95em;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: var(--primary-font-color);
+}
+
+.navigation-numbering {
+  margin-right: 5%;
+  font-family: "Roboto-Mono";
+  font-size: 0.8em;
+  color: var(--secondary-font-color);
+}
+
+.navigation-contact-button {
+  padding: 1% 3.5%;
+  border: 2px solid var(--secondary-font-color);
+  color: var(--secondary-font-color);
+  transition: all 0.4s;
+}
+
+/* First Page */
+.first-page-container {
+  width: 100%;
+  margin-top: 5%;
+  margin-left: 12%;
+  font-family: "Roboto-Mono";
+}
+.first-page-pre-name {
+  font-family: "SF";
+  letter-spacing: 1.5px;
+  font-size: 1.2em;
+  color: var(--secondary-font-color);
+  margin-bottom: 0.85%;
+}
+
+.first-page-name {
+  text-transform: capitalize;
+  font-weight: bolder;
+  font-size: 3.5em;
+  margin-bottom: 1%;
+  letter-spacing: 1px;
+}
+.first-page-job-slogan {
+  font-size: 3.5em;
+  font-weight: bolder;
+  color: var(--primary-font-lightest);
+  margin-bottom: 1.2%;
+}
+
+.first-page-description {
+  width: 40%;
+  line-height: 160%;
+  font-family: "Montserrat";
+  font-size: 1em;
+  letter-spacing: 1px;
+  color: var(--primary-font-lightest);
+  margin-bottom: 4.5%;
+}
+
+.first-page-check-work-button {
+  color: var(--secondary-font-color);
+  padding: 1% 2%;
+  border: 2px solid var(--secondary-font-color);
+  text-decoration: none;
+  transition: all 0.4s;
+  -webkit-transition: all 0.43s;
+  -moz-transition: all 0.43s;
+  -ms-transition: all 0.43s;
+  -o-transition: all 0.43s;
+}
+
+/* About Page */
+.about-page-container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--navy);
+  padding: 5% 3% 0 16%;
+}
+
+.about-page-title {
+  text-transform: capitalize;
+  font-size: 2.1em;
+  font-weight: bold;
+  color: var(--primary-font-color);
+  margin-bottom: 2%;
+  letter-spacing: 1.5px;
+}
+
+.content-numbering {
+  margin-right: 0.25%;
+  font-family: "Roboto-Mono";
+  font-size: 0.8em;
+  color: var(--secondary-font-color);
+}
+
+.about-page-content-container {
+  display: flex;
+}
+.about-page-text-container {
+  width: 55%;
+}
+.about-page-text {
+  font-family: "Montserrat";
+  font-size: 1em;
+  margin-top: 2%;
+  line-height: 180%;
+  color: var(--primary-font-lightest);
+}
+
+.about-page-skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 0%;
+  font-family: "Montserrat";
+  letter-spacing: 1px;
+  font-size: 1em;
+  color: var(--primary-font-lightest);
+}
+
+/* .about-skills-list-left {
+  margin-left: 15%;
+} */
+.about-skills-list-right {
+  margin-right: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about-page-skill {
+  margin-top: 12%;
+  font-size: 0.8em;
+  font-family: "SF";
+  letter-spacing: 0.2px;
+}
+.about-page-skill::before {
+  content: "▹ ";
+  font-size: 1.2em;
+  color: var(--secondary-font-color);
+}
+
+.about-page-image-container {
+  position: relative;
+  width: 40%;
+  height: 65vh;
+  margin-left: 5%;
+}
+.about-page-image {
+  position: absolute;
+  width: 80%;
+  height: 90%;
+  z-index: 10;
+  background: linear-gradient(to right, #60f7d46c, #60f7d46c),
+    url("../images/about-me.jpg");
+  background-size: cover;
+  background-position: top;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+.about-page-image-frame {
+  position: absolute;
+  margin-left: 8%;
+  margin-top: 8%;
+  width: 80%;
+  height: 90%;
+  z-index: 0;
+  border: 4px solid var(--secondary-font-color);
+}
