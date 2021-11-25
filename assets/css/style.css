@@ -10,6 +10,7 @@
   --mint: #b4f8c8;
   --yellow: #fbe7c6;
   --liliac: #eeb5eb;
+  --salmon: #ffa384;
 
   /* Font Colors */
   --primary-font-color: #ccd6f6;
@@ -356,7 +357,8 @@ body {
 .works-page-content-two,
 .works-page-content-three,
 .works-page-content-four,
-.works-page-content-five {
+.works-page-content-five,
+.works-page-content-six {
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -367,19 +369,22 @@ body {
 }
 
 .works-page-content-two {
-  background-color: var(--hot-pink);
-}
-
-.works-page-content-three {
   background-color: var(--mint);
 }
 
-.works-page-content-four {
+.works-page-content-three {
   background-color: var(--yellow);
+}
+
+.works-page-content-four {
+  background-color: var(--hot-pink);
 }
 
 .works-page-content-five {
   background-color: var(--baby-blue);
+}
+.works-page-content-six {
+  background-color: var(--salmon);
 }
 
 .works-page-content {
@@ -447,15 +452,50 @@ body {
   text-transform: uppercase;
 }
 
+.works-page-content-right-one {
+  background: url("../images/iphone-mockup.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.works-page-content-right-two {
+  background: url("../images/android-mockup.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.works-page-content-right-three {
+  background: url("../images/watch-mockup.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.works-page-content-right-four {
+  background: url("../images/macbook-mockup.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.works-page-content-right-five {
+  background: url("../images/desktop-mockup.jpg");
+  background-size: cover;
+  background-position: top;
+}
+.works-page-content-right-six {
+  background: url("../images/multi-mockup.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 /* Contact Page */
 .contact-page-container {
   width: 100%;
-  height: 100vh;
+  height: 75vh;
   background-color: var(--navy);
   margin-top: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 3%;
 }
 .contact-page-title {
   text-transform: capitalize;
@@ -480,7 +520,6 @@ body {
   text-align: center;
   font-size: 1em;
   font-family: "Montserrat";
-
   line-height: 180%;
 }
 .contact-icons-container {
@@ -490,6 +529,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-top: 3%;
 }
 
 .contact-icons {
@@ -520,7 +560,7 @@ body {
   background-image: url("../icons/instagram.svg");
 }
 .bottom-credit {
-  margin-top: 17%;
+  margin-top: 12%;
   color: var(--primary-font-lightest);
   text-align: center;
   font-size: 1em;
